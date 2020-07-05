@@ -1,46 +1,48 @@
 <header class="section-header">
-  <div class="section-header__logo">
+  <div class="section-header__wrapper">
+    <div class="section-header__logo">
+      <img
+        class="section-header__logo-image"
+        src="../img/logo.svg"
+        loading="lazy"
+        importance="low"
+      />
+      <h1 class="section-header__logo-text">
+        LaslesVPN
+      </h1>
+    </div>
+    <nav class="section-header__navigation">
+      <a class="navigation-item" href="">About</a>
+      <a class="navigation-item" href="">Features</a>
+      <a class="navigation-item" href="">Pricing</a>
+      <a class="navigation-item" href="">Testimonials</a>
+      <a class="navigation-item" href="">Help</a>
+      <a class="navigation-item navigation-item--btn" href="">Sign In</a>
+      <a class="navigation-item navigation-item--btn navigation-item--btn-accent" href="">Sign Up</a>
+    </nav>
+    <div class="section-header__main">
+      <h2 class="section-header__main-title">
+        Want anything to be easy with LaslesVPN.
+      </h2>
+      <p class="section-header__main-text">
+        Provide a network for all your needs with ease
+        and fun using LaslesVPN discover interesting
+        features from us.
+      </p>
+      <a class="section-header__main-btn">
+        Get Started
+      </a>
+    </div>
     <img
-      class="section-header__logo-image"
-      src="../img/logo.svg"
+      class="section-header__illustration"
+      src="../img/header_illustration.svg"
       loading="lazy"
       importance="low"
     />
-    <h1 class="section-header__logo-text">
-      LaslesVPN
-    </h1>
-  </div>
-  <nav class="section-header__navigation">
-    <a class="navigation-item" href="">About</a>
-    <a class="navigation-item" href="">Features</a>
-    <a class="navigation-item" href="">Pricing</a>
-    <a class="navigation-item" href="">Testimonials</a>
-    <a class="navigation-item" href="">Help</a>
-    <a class="navigation-item navigation-item--btn" href="">Sign In</a>
-    <a class="navigation-item navigation-item--btn navigation-item--btn-accent" href="">Sign Up</a>
-  </nav>
-  <div class="section-header__main">
-    <h2 class="section-header__main-title">
-      Want anything to be easy with LaslesVPN.
-    </h2>
-    <p class="section-header__main-text">
-      Provide a network for all your needs with ease
-      and fun using LaslesVPN discover interesting
-      features from us.
-    </p>
-    <a class="section-header__main-btn">
-      Get Started
-    </a>
-  </div>
-  <img
-    class="section-header__illustration"
-    src="../img/header_illustration.svg"
-    loading="lazy"
-    importance="low"
-  />
-  <div class="section-header__features">
-    <each loop="feature in features">
-      <include src="./src/html/feature.html" locals="{ feature }"></include>
-    </each>
+    <div class="section-header__features">
+      <each loop="feature in features">
+        <include src="./src/html/feature.html" locals="{ feature }"></include>
+      </each>
+    </div>
   </div>
 </header>
