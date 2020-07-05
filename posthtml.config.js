@@ -20,6 +20,44 @@ module.exports = {
             text: 'Servers'
           }
         ],
+        plans: [
+          {
+              title: 'Free Plan',
+              features: [
+                'Unlimited Bandwitch',
+                'Encrypted Connection',
+                'No Traffic Logs',
+                'Works on All Devices'
+              ],
+              price: 'Free',
+              period: ''
+          },
+          {
+              title: 'Standard Plan',
+              features: [
+                'Unlimited Bandwitch',
+                'Encrypted Connection',
+                'Yes Traffic Logs',
+                'Works on All Devices',
+                'Connect Anyware'
+              ],
+              price: '$9',
+              period: '/ mo'
+          },
+          {
+              title: 'Premium Plan',
+              features: [
+                'Unlimited Bandwitch',
+                'Encrypted Connection',
+                'Yes Traffic Logs',
+                'Works on All Devices',
+                'Connect Anyware',
+                'Get New Features'
+              ],
+              price: '$12',
+              period: '/ mo'
+          },
+        ],
       },
     },
   },

@@ -1,0 +1,24 @@
+<div class="pricing-plan">
+  <img
+    class="pricing-plan__image"
+    src="../img/plan_illustration.svg"
+    alt=""
+  />
+  <h3 class="pricing-plan__title">{{ plan.title }}</h3>
+  <ul class="pricing-plan__features">
+    <each loop="feature in plan.features">
+      <li class="pricing-plan__features-item">{{ feature }}</li>
+    </each>
+  </ul>
+  <div class="pricing-plan__price">
+    <span class="pricing-plan__price-value">
+      {{ plan.price }}
+    </span>
+    <span class="pricing-plan__price-currency">
+      {{ plan.period }}
+    </span>
+  </div>
+  <a class="pricing-plan__buy-btn" href="">
+    Select
+  </a>
+</div>

@@ -1,0 +1,16 @@
+<section class="section-pricing">
+  <div class="section-pricing__wrapper">
+    <h1 class="section-pricing__header">
+      Choose Your Plan
+    </h1>
+    <p class="section-pricing__text">
+      Let's choose the package that is best
+      for you and explore it happily and cheerfully.
+    </p>
+    <div class="section-pricing__plans">
+      <each loop="plan in plans">
+        <include src="./src/html/plan.html" locals="{ plan }"></include>
+      </each>
+    </div>
+  </div>
+</section>
