@@ -58,6 +58,13 @@ module.exports = {
               period: '/ mo'
           },
         ],
+        sponsors: [
+          '../img/netflix.svg',
+          '../img/reddit.svg',
+          '../img/amazon.svg',
+          '../img/discord.svg',
+          '../img/spotify.svg'
+        ]
       },
     },
   },
