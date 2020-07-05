@@ -1,0 +1,36 @@
+{
+  "name": "lasles_vpn",
+  "version": "1.0.0",
+  "description": "landing page wich was made for educational purposes",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/html/index.html",
+    "devopen": "parcel src/html/index.html --open 'google chrome'",
+    "build": "parcel build src/html/index.html",
+    "prebuild": "rm -rf dist",
+    "deploy:manual": "npm run build && netlify deploy --dir=dist -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreycrane/lasles_vpn.git"
+  },
+  "keywords": [
+    "landing",
+    "page"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreycrane/lasles_vpn/issues"
+  },
+  "homepage": "https://github.com/andreycrane/lasles_vpn#readme",
+  "devDependencies": {
+    "netlify-cli": "^2.54.0",
+    "parcel-bundler": "^1.12.4",
+    "posthtml-expressions": "^1.4.1",
+    "posthtml-include": "^1.4.3",
+    "prettier": "^2.0.5",
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0"
+  }
+}
