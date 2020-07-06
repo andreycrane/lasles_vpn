@@ -9,9 +9,11 @@
       using this crazy feature.
     </p>
     <div class="section-customers__container">
-      <each loop="customer in customers">
-        <include src="./src/html/customer.html" locales="{ customer}"></include>
-      </each>
+      <div class="section-customers__items">
+        <each loop="customer in customers">
+          <include src="./src/html/customer.html" locales="{ customer}"></include>
+        </each>
+      </div>
       <div class="section-customers__controls">
         <div class="section-customers__controls-progress">
         </div>
