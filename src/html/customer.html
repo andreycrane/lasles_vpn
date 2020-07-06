@@ -1,17 +1,17 @@
 <div class="customers-item">
   <picture class="customers-item__picture">
     <img
-      src=""
+      src="{{ customer.picture }}"
       class="customers-item__image"
       loading="lazy"
       importance="low"
     />
   </picture>
-  <span class="customers-item__name"></span>
-  <span class="customers-item__location"></span>
+  <span class="customers-item__name">{{ customer.name }}</span>
+  <span class="customers-item__location">{{ customer.location }}</span>
   <div class="customers-item__rating">
-    <span class="customers-item__rating-value"></span>
+    <span class="customers-item__rating-value">{{ customer.rating }}</span>
     <span class="customers-item__rating-icon"></span>
   </div>
-  <span class="customers-item__review"></span>
+  <span class="customers-item__review">{{ customer.review }}</span>
 </div>
