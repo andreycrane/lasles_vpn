@@ -1,0 +1,25 @@
+<section class="section-customers">
+  <div class="section-customers__wrapper">
+    <h2 class="section-customers__title">
+      Trusted by Thousands of Happy Customer
+    </h2>
+    <p class="section-customers__text">
+      These are the stories of our customers who
+      have joined us with great pleasure when
+      using this crazy feature.
+    </p>
+    <div class="section-customers__container">
+      <each loop="customer in customers">
+        <include src="./src/html/customer.html" locales="{ customer}"></include>
+      </each>
+      <div class="section-customers__controls">
+        <div class="section-customers__controls-progress">
+        </div>
+        <div class="section-customers__controls-buttons">
+          <button class="controls-buttons__prev"></button>
+          <button class="controls-buttons__next"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
