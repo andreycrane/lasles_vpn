@@ -30,7 +30,7 @@
     "posthtml-expressions": "^1.4.1",
     "posthtml-include": "^1.4.3",
     "prettier": "^2.0.5",
-    "stylelint": "^13.6.1",
+    "stylelint": "^15.10.1",
     "stylelint-config-standard": "^20.0.0"
   }
 }
